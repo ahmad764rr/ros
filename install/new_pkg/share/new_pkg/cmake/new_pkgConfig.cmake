@@ -1,0 +1,1 @@
+/home/ahmad/ros_wc/build/new_pkg/ament_cmake_core/new_pkgConfig.cmake

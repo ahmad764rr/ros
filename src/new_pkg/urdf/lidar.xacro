@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="robot">
+<link name="lidar">
+    <inertial>
+        <origin xyz="0.0 0.0 0.009999999999999983" rpy="0.0 -0.0 0.0" />
+        <mass value="0.6042068071016568" />
+        <inertia ixx="0.0002051785615782651" iyy="0.0002051785615782755" izz="0.0003700766693497588" ixy="-8.924416761146858e-20" iyz="-4.908429218630772e-19" ixz="-4.336808689942018e-19" />
+    </inertial>
+    <visual name="lidar_visual">
+        <origin xyz="-0.05 0.0 -0.1" rpy="0.0 -0.0 0.0" />
+        <geometry>
+            <mesh filename="file://$(find new_pkg)/meshes/lidar.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+        <material name="black">
+        </material>
+    </visual>
+    <collision name="lidar_collision">
+        <origin xyz="-0.05 0.0 -0.1" rpy="0.0 -0.0 0.0" />
+        <geometry>
+            <mesh filename="file://$(find new_pkg)/meshes/lidar.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+    </collision>
+</link>
+<gazebo reference="lidar">
+    <material>Gazebo/Black</material>
+
+    <sensor name="laser" type="ray">
+        <pose> 0 0 0 0 0 0 </pose>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>360</samples>
+                    <min_angle>-3.14</min_angle>
+                    <max_angle>3.14</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.3</min>
+                <max>12</max>
+            </range>
+        </ray>
+        <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+                <argument>~/out:=scan</argument>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>lidar</frame_name>
+        </plugin>
+    </sensor>
+</gazebo>
+
+</robot>
