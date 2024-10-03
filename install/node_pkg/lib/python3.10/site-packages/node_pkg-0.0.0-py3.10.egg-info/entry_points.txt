@@ -1,0 +1,4 @@
+[console_scripts]
+draw_circle = node_pkg.draw_node:main
+lidar = node_pkg.node:main
+

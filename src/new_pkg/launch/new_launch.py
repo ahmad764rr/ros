@@ -31,6 +31,7 @@ def generate_launch_description():
             package='rviz2',
             executable='rviz2',
             name='rviz2',
+            arguments=["-d", "/home/ahmad/ros/src/new_pkg/rviz/rviz_config.rviz"]
         )
 
     # joint_state_publisher = Node(

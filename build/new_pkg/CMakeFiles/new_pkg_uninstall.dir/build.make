@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmad/ros_wc/src/new_pkg
+CMAKE_SOURCE_DIR = /home/ahmad/ros/src/new_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmad/ros_wc/build/new_pkg
+CMAKE_BINARY_DIR = /home/ahmad/ros/build/new_pkg
 
 # Utility rule file for new_pkg_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/new_pkg_uninstall.dir/compiler_depend.make
 include CMakeFiles/new_pkg_uninstall.dir/progress.make
 
 CMakeFiles/new_pkg_uninstall:
-	/usr/bin/cmake -P /home/ahmad/ros_wc/build/new_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ahmad/ros/build/new_pkg/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 new_pkg_uninstall: CMakeFiles/new_pkg_uninstall
 new_pkg_uninstall: CMakeFiles/new_pkg_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/new_pkg_uninstall.dir/clean:
 .PHONY : CMakeFiles/new_pkg_uninstall.dir/clean
 
 CMakeFiles/new_pkg_uninstall.dir/depend:
-	cd /home/ahmad/ros_wc/build/new_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmad/ros_wc/src/new_pkg /home/ahmad/ros_wc/src/new_pkg /home/ahmad/ros_wc/build/new_pkg /home/ahmad/ros_wc/build/new_pkg /home/ahmad/ros_wc/build/new_pkg/CMakeFiles/new_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ahmad/ros/build/new_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmad/ros/src/new_pkg /home/ahmad/ros/src/new_pkg /home/ahmad/ros/build/new_pkg /home/ahmad/ros/build/new_pkg /home/ahmad/ros/build/new_pkg/CMakeFiles/new_pkg_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/new_pkg_uninstall.dir/depend
 

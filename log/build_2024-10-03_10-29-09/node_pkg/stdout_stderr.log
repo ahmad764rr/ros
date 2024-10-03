@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/node_pkg/node_pkg.egg-info
+writing ../../build/node_pkg/node_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/node_pkg/node_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/node_pkg/node_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/node_pkg/node_pkg.egg-info/requires.txt
+writing top-level names to ../../build/node_pkg/node_pkg.egg-info/top_level.txt
+writing manifest file '../../build/node_pkg/node_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/node_pkg/node_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/node_pkg/node_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ahmad/ros/build/node_pkg/build
+creating /home/ahmad/ros/build/node_pkg/build/lib
+creating /home/ahmad/ros/build/node_pkg/build/lib/node_pkg
+copying node_pkg/draw_node.py -> /home/ahmad/ros/build/node_pkg/build/lib/node_pkg
+copying node_pkg/__init__.py -> /home/ahmad/ros/build/node_pkg/build/lib/node_pkg
+copying node_pkg/node.py -> /home/ahmad/ros/build/node_pkg/build/lib/node_pkg
+running install
+running install_lib
+creating /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg
+copying /home/ahmad/ros/build/node_pkg/build/lib/node_pkg/draw_node.py -> /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg
+copying /home/ahmad/ros/build/node_pkg/build/lib/node_pkg/__init__.py -> /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg
+copying /home/ahmad/ros/build/node_pkg/build/lib/node_pkg/node.py -> /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg
+byte-compiling /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg/draw_node.py to draw_node.cpython-310.pyc
+byte-compiling /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg/node.py to node.cpython-310.pyc
+running install_data
+creating /home/ahmad/ros/install/node_pkg/share/ament_index
+creating /home/ahmad/ros/install/node_pkg/share/ament_index/resource_index
+creating /home/ahmad/ros/install/node_pkg/share/ament_index/resource_index/packages
+copying resource/node_pkg -> /home/ahmad/ros/install/node_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ahmad/ros/install/node_pkg/share/node_pkg
+running install_egg_info
+Copying ../../build/node_pkg/node_pkg.egg-info to /home/ahmad/ros/install/node_pkg/lib/python3.10/site-packages/node_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing caircul script to /home/ahmad/ros/install/node_pkg/lib/node_pkg
+Installing lidar script to /home/ahmad/ros/install/node_pkg/lib/node_pkg
+writing list of installed files to '/home/ahmad/ros/build/node_pkg/install.log'

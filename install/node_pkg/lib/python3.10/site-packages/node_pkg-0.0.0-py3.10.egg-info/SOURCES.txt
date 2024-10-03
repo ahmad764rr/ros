@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/node_pkg/node_pkg.egg-info/PKG-INFO
+../../build/node_pkg/node_pkg.egg-info/SOURCES.txt
+../../build/node_pkg/node_pkg.egg-info/dependency_links.txt
+../../build/node_pkg/node_pkg.egg-info/entry_points.txt
+../../build/node_pkg/node_pkg.egg-info/requires.txt
+../../build/node_pkg/node_pkg.egg-info/top_level.txt
+../../build/node_pkg/node_pkg.egg-info/zip-safe
+node_pkg/__init__.py
+node_pkg/draw_node.py
+node_pkg/node.py
+resource/node_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
